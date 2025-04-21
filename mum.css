@@ -46,10 +46,10 @@
     color: #fff;
   }
   
-  .content p {
+  .content p span {
     font-style: italic;
     font-size: 1.5em;
-    color: #fff;
+    color: gold;
   }
   
   /* Button container styling */
