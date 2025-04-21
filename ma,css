@@ -1,0 +1,145 @@
+* {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+PHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIi8+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjM0IiBoZWlnaHQ9IjM0Ij48YW5pbWF0ZSBpZD0iciIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49IjBzO20uZW5kIiBmcm9tPSJyZWQiIHRvPSIjRkYwIi8+PGFuaW1hdGUgaWQ9InkiIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIGR1cj0iMXMiIGJlZ2luPSJyLmVuZCIgZnJvbT0iI0ZGMCIgdG89IiMwRjAiLz48YW5pbWF0ZSBpZD0iZyIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49InkuZW5kIiBmcm9tPSIjMEYwIiB0bz0iIzBGRiIvPjxhbmltYXRlIGlkPSJjIiBhdHRyaWJ1dGVOYW1lPSJmaWxsIiBkdXI9IjFzIiBiZWdpbj0iZy5lbmQiIGZyb209IiMwRkYiIHRvPSIjMDBGIi8+PGFuaW1hdGUgaWQ9ImIiIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIGR1cj0iMXMiIGJlZ2luPSJjLmVuZCIgZnJvbT0iIzAwRiIgdG89IiNGMEYiLz48YW5pbWF0ZSBpZD0ibSIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49ImIuZW5kIiBmcm9tPSIjRjBGIiB0bz0icmVkIi8+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgMjUgMjUiIHRvPSI5MCAyNSAyNSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3JlY3Q+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMTAiLz48L3N2Zz4=");
+  background-position: center center;
+  font: 20px/1 serif;
+}
+
+#main {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 5px #000;
+  border-radius: 0.5em;
+  color: #FFF;
+  margin: 1em auto;
+  padding: 1em;
+  width: 640px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-top: 1em;
+}
+
+a {
+  color: #FFF;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Sparkle animation */
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 1; }
+}
+
+.sparkle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #faf605;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: float 5s linear infinite;
+    box-shadow: 0 0 8px #ffdd57, 0 0 12px #dc6bff;
+}
+
+/* Random colors for variety */
+.sparkle:nth-child(odd) { background-color: #2d0547; }
+.sparkle:nth-child(even) { background-color: #f0d720; }
+
+/* Random starting positions */
+.sparkle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.sparkle:nth-child(2) { left: 20%; animation-delay: 2s; }
+.sparkle:nth-child(3) { left: 30%; animation-delay: 4s; }
+.sparkle:nth-child(4) { left: 40%; animation-delay: 1s; }
+.sparkle:nth-child(5) { left: 50%; animation-delay: 3s; }
+.sparkle:nth-child(6) { left: 60%; animation-delay: 5s; }
+.sparkle:nth-child(7) { left: 70%; animation-delay: 2s; }
+.sparkle:nth-child(8) { left: 80%; animation-delay: 4s; }
+.sparkle:nth-child(9) { left: 90%; animation-delay: 1s; }
+.sparkle:nth-child(10) { left: 95%; animation-delay: 3s; }
+.sparkle:nth-child(11) { left: 5%; animation-delay: 3s; }
+
+/* Responsive text size */
+@media only screen and (max-width: 768px) {
+    .text {font-size: 24px; padding: 15px;}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 16px;}
+}<!-- Sparkles Background Elements -->
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  
+
+<div class="slideshow-space"></div>
+
+
+<!-- Background audio with an ID for targeting -->
+<audio id="backgroundAudio" loop hidden>
+    <source src="bday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+<!-- Button to play the audio -->
+<button class="play-button" onclick="playAudio()">Play Background Music</button>
+
+
+
+<div class="slideshow-container">
+
+<!-- Sparkles Background Elements -->
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+
+
+<div class="slideshow-space"></div
+  <title>SVG SMIL Animate with Path</title>
+    <rect x="0" y="0" width="300" height="100" stroke="yellow
+    " stroke-width="1" />
+     <circle cx="0"
+      cy="50" r="15" 
+      fill="blue"
+       stroke="black" 
+       stroke-width="1">
+      
+      <animateMotion
+        path="M 250,80 H 50 Q 30,80 30,50 Q 30,20 50,20 H 250 Q 280,20,280,50 Q 280,80,250,80Z"
+        dur="3s"
+        repeatCount="indefinite"
+        rotate="auto" />
+    </circle>
+  </svg>
+</section>
